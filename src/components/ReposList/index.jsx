@@ -27,18 +27,17 @@ const ReposList = ({nomeUsuario}) => {
                 {/* {repos.map(repositorio => ( }  desestruturando .. -> */}
                 {repos.map(({ id,name,language, html_url}) => (
                     <li className={styles.listItem} key={id}>
-                    <div className={styles.itemName}>
-                        <b>Nome:</b> 
-                        {name}
-                    </div>
-                    <div className={styles.itemLanguage}>
-                        <b>Linguagem:</b>
-                         {language}
-                    </div>
-                    <a className={styles.itemLink} target="_blank"  href={html_url}>Visitar no GitHub</a>
-                </li> 
+                        <div className={styles.itemName}>
+                            <b>Nome:</b> 
+                            {name}
+                        </div>
+                        <div className={styles.itemLanguage}>
+                            <b>Linguagem:</b>
+                            {language}
+                        </div>
+                        <a className={styles.itemLink} target="_blank"  href={html_url}>Visitar no GitHub</a>
+                    </li> 
                 ))}
-                <li>Repositório</li>
             </ul>
             )}
         </div>
